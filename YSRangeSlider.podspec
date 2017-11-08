@@ -5,9 +5,9 @@ Pod::Spec.new do |s|
 
   s.homepage = 'https://github.com/YardiSystems/YSRangeSlider'
   s.license  = { :type => 'MIT', :file => 'LICENSE' }
-  s.source   = { :git => 'https://github.com/YardiSystems/YSRangeSlider.git', :tag => "#{s.version}" }
+  s.source   = { :git => 'https://github.com/LaurentiuUngur/YSRangeSlider.git', :tag => "#{s.version}" }
   s.authors  = { 'Laurentiu Ungur' => 'laurentiu.ungur@yardi.com',
-                  'Ungur Laurentiu' => 'laurentyu1995@gmail.com'
+                 'Ungur Laurentiu' => 'laurentyu1995@gmail.com'
                }
 
   s.requires_arc = true
