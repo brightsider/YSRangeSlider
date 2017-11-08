@@ -9,11 +9,15 @@
 import UIKit
 import YSRangeSlider
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
+    // MARK: - Properties
+    
     @IBOutlet weak var rangeSlider: YSRangeSlider!
     @IBOutlet weak var stepsSwitch: UISwitch!
     @IBOutlet weak var label: UILabel!
     
+    // MARK: - ViewController
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,7 +25,9 @@ class ViewController: UIViewController {
         stepsSwitch.addTarget(self, action: #selector(switchChanged), for: .valueChanged)
     }
     
-    func switchChanged(_ sender: UISwitch) {
+    // MARK: - Private Functions
+    
+    @objc func switchChanged(_ sender: UISwitch) {
         rangeSlider.step = sender.isOn ? 0.1 : 0.0
     }
 }

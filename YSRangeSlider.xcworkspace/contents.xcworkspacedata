@@ -2,10 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:YSRangeSliderExample/YSRangeSliderExample.xcodeproj">
+      location = "group:YSRangeSlider.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:YSRangeSlider.xcodeproj">
+      location = "group:YSRangeSliderExample/YSRangeSliderExample.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:YSRangeSliderExample/Pods/Pods.xcodeproj">
