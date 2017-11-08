@@ -76,7 +76,7 @@ import PackageDescription
 
 let package = Package(name: "MyApp",
 dependencies: [
-.Package(url: "https://github.com/LaurentiuUngur/YSRangeSlider", majorVersion: 3)
+.Package(url: "https://github.com/LaurentiuUngur/YSRangeSlider", majorVersion: 4)
 ])
 ```
 
