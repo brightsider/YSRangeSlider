@@ -319,7 +319,7 @@ import UIKit
     private func animate(thumbLayer: CALayer, isSelected selected: Bool) {
         CATransaction.begin()
         CATransaction.setAnimationDuration(0.5)
-        CATransaction.setAnimationTimingFunction(CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut))
+        CATransaction.setAnimationTimingFunction(CAMediaTimingFunction(name: .easeInEaseOut))
         thumbLayer.transform = selected ? CATransform3DMakeScale(1.3, 1.3, 1) : CATransform3DIdentity
         CATransaction.commit()
     }
@@ -335,7 +335,7 @@ extension CGRect {
 
 // MARK: - YSRangeSliderDelegate
 
-public protocol YSRangeSliderDelegate: class {
+public protocol YSRangeSliderDelegate: AnyObject {
     /** Delegate function that is called every time minimum or maximum selected value is changed
      
     - Parameters:
