@@ -1,11 +1,8 @@
-source 'https://github.com/CocoaPods/Specs'
-
-platform :ios, '8.0'
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '13.0'
 
 use_frameworks!
-
-xcodeproj 'YSRangeSliderExample'
-workspace '../YSRangeSlider'
+inhibit_all_warnings!
 
 target :YSRangeSliderExample do
   pod 'YSRangeSlider', :path => '../'
